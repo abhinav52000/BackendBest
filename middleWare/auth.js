@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
-// Isko tum sifhe wha bhi dal skte the par ye middileware ka concept bhi smjha rha hai ki kese kisi request ke bich mai kuch aur ko chlana ho to kar skte ho
+// Isko tum sidhe wha bhi dal skte the par ye middileware ka concept bhi smjha rha hai ki kese kisi request ke bich mai kuch aur ko chlana ho to kar skte ho
 const fetchUser = (req, res, next) => {
   const token = req.header("Authorization");
 

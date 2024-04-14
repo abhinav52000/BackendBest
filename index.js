@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/auth", require("./routes/auth"));
-app.use("/api/createPosts", require("./routes/auth"));
+app.use("/api/notes", require("./routes/note"));
 
 app.listen(port, () => {
   console.log(`The Db is running at http://localhost:${port}`);
